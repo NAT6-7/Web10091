@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2 {
+            padding:20px 0;
+        }
+        .wrapper {
+            text-align: center;
+            margin: 200px 200px;
+            border: 2px solid blue;
+            padding: 30px;
+        }
+        .header {
+            margin: 3px 0;
+        }
+        .title {
+            line-height: 20px;
+            padding-bottom: 20px;
+        }
+        .line {
+            border: 2px solid blue;
+        }
+        .big-content {
+            color: black;
+        }
+        .nav {
+            margin-top:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav {
+            list-style-type: none;
+        }
+        .content {
+            text-align: left;
+        }
+        .contain-content {
+            margin-left:50px;
+        }
+        .small-content {
+            list-style-type: lower-alpha;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>BÀI KIỂM TRA CHƯƠNG 2</h2>
+            <div class="title">
+                <p><b>Môn học: </b><i>Ứng dụng Web</i></p>
+                <p><b>Mã số sinh viên: </b><i>12355</i></p>
+                <p><b>Họ và tên: </b><i>Nguyễn Văn A</i></p>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="nav">
+            
+            <a href="bt10-index.html">Trang chủ</a>
+            <a href="bt10-content.html">Nội dung môn học</a>
+            <a href="bt10-register.html">Đăng ký</a>
+
+    </div>
+        <div class="content">
+        <h2>NỘI DUNG MÔN HỌC</h2>
+        <h3>I. <a  class="big-content" href="#">HTML</a></h3>
+        <ol>
+            <li><b><i>Mục tiêu chương</i></b></li>
+            <li><b><i>Nội dung</i></b></li>
+                <div class="contain-content">
+                    <ul>
+                        <li>Văn bản, hình ảnh
+                            <ul style="margin-left: 50px;">
+                                <li>Văn bản</li>
+                                <li>Hình ảnh</li>
+                            </ul>
+                        </li>
+                        <li>Danh sách</li>
+                        <li>Bảng</li>
+                        <li>Form & Control</li>
+                    </ul>
+                </div>
+        </ol>
+        <h3>II. <a class="big-content"  href="#">CSS</a></h3>
+        <ol>
+            <li><b><i>Mục tiêu chương</i></b></li>
+            <li><b><i>Nội dung</i></b></li>
+                    <div class="contain-content">
+                        <ul>
+                            <li>Cú pháp CSS</li>
+                            <li>Các bộ chọn CSS</li>
+                            <li>Định dạng trang web với CSS
+                                    <ol class="small-content">
+                                        <li>Văn bản và font chữ</li>
+                                        <li>Màu và nền</li>
+                                        <li>Bảng và danh sách</li>
+                                    </ol>
+                            </li>
+
+                        </ul>
+                    </div>
+        </ol>
+        </div>
+        <h3  style="text-align: left;">III. <a class="big-content"href="#">Javascript</a></h3>
+        <h3  style="text-align: left;">IV. <a class="big-content"href="#">jQuery</a></h3>
+    </div>
+</body>
+</html>

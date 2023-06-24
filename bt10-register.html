@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Dụng web</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2 {
+            padding:20px 0;
+        }
+        .wrapper {
+            text-align: center;
+            margin: 200px 200px;
+            border: 2px solid blue;
+            padding: 30px;
+        }
+        .header {
+            margin: 3px 0;
+        }
+        .nav {
+            margin-top:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav {
+            list-style-type: none;
+        }
+        .title {
+            line-height: 20px;
+            padding-bottom: 20px;
+        }
+        .line {
+            border: 2px solid blue;
+        }
+        table, th, td {
+            border: 2px solid black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>BÀI KIỂM TRA CHƯƠNG 2</h2>
+            <div class="title">
+                <p><b>Môn học: </b><i>Ứng dụng Web</i></p>
+                <p><b>Mã số sinh viên: </b><i>12355</i></p>
+                <p><b>Họ và tên: </b><i>Nguyễn Văn A</i></p>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="nav">
+            <a href="bt10-index.html">Trang chủ</a>
+            <a href="bt10-content.html">Nội dung môn học</a>
+            <a href="bt10-register.html">Đăng ký</a>
+    </div>
+        <h3>ĐĂNG KÝ THAM GIA DIỄN ĐÀN</h3>
+        <form action="/action_page.php">
+            <table style="width:100%">
+                <tr>
+                    <td style="width:30%"><label for="username">Tên đăng nhập:</label></td>
+                    <td><input style="width:99%" type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Mật khẩu:</label></td>
+                    <td><input style="width:99%" type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Giới tính</label></td>
+                    <td>
+                        <input type="radio" id="gender" name="gender" value="Nam" required>Nam
+                        <input type="radio" id="gender" name="gender" value="Nữ" required>Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="birth">Ngày sinh</label></td>
+                    <td><input style="width:99%"type="date" id="birth" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input style="width:99%"type="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="favorite">Ngôn ngữ lập trình yêu thích nhất</label></td>
+                    <td><select style="width:99%"name="favorite" id="favorite_language" required>
+                        <option value="C++">C++</option>
+                        <option value="C#">C#</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="law">Quy đinh khi tham gia diễn đàn</label></td>
+                    <td><input style="width:99%"type="text" for="law" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="cursor: pointer;">
+                        <input type="image" src="Images/login.jpg" alt="Submit" width="20%" height="auto">
+                        <input type="image" src="Images/reset.jpg" alt="Reset" width="20%" height="auto">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
